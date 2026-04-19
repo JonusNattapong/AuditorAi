@@ -6,7 +6,8 @@
 
 ## Executive Summary
 **Target**: http://localhost:8080/ (AuditorAi Vulnerable Lab)  
-**Assessment Completed**: All vectors probed, findings validated.
+**Assessment Completed**: Full swarm investigation complete  
+**Overall Risk Score**: **HIGH**
 
 ---
 
@@ -48,6 +49,8 @@
 | /ftp/ | **None** | **CRITICAL** | **VULNERABLE** |
 | /admin/config | **None** | **CRITICAL** | **VULNERABLE** |
 | /ai-assistant | Partial | HIGH | VULNERABLE |
+| /admin | N/A | None | 404 Not Found |
+| /login | N/A | None | 404 Not Found |
 
 ---
 

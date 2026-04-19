@@ -4,6 +4,10 @@
 
 AuditorAi is a specialized autonomous intelligence platform engineered for deep-spectrum security assessments, prompt resilience mapping, and systemic vulnerability discovery. It utilizes a parallel swarm architecture to validate organizational security boundaries and provide high-fidelity hardening intelligence.
 
+## Live Demonstration
+
+https://github.com/JonusNattapong/AuditorAi/raw/main/media/demo_auditorai_v1.5.mp4
+
 ---
 
 ## Capabilities
