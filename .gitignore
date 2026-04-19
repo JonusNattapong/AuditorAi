@@ -1,31 +1,12 @@
-# Dependency directories
 node_modules/
-jspm_packages/
-
-# Environment variables
 .env
-.npmrc
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Debug logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Analysis results & Workspaces
-/output/
-/workspaces/
-/temp/
-/tmp/
+.DS_Store
 *.log
-
-# AI Agent Specifics
+config.json
+temp/
+media/
+results/
+.parallax/
 .gemini/
-agent_debug.log
-
-# VSCode settings
-.vscode/
+.env.*
+!.env.example

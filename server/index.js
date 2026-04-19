@@ -1,4 +1,5 @@
 const fs = require("fs");
+const chalk = require("chalk");
 const path = require("path");
 const express = require("express");
 const dotenv = require("dotenv");
