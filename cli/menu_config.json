@@ -1,0 +1,43 @@
+[
+  {
+    "id": "agent",
+    "key": "M",
+    "label": "START AUTONOMOUS REDTEAM",
+    "description": "Automated target analysis and discovery",
+    "color": "#D97757",
+    "bold": true
+  },
+  {
+    "id": "lab",
+    "key": "T",
+    "label": "TRAINING SECURITY LAB (PORT 8080)",
+    "description": "Local offensive security practice lab",
+    "color": "#FCAB64",
+    "bold": true
+  },
+  {
+    "id": "config",
+    "key": "S",
+    "label": "ENVIRONMENT SETTINGS",
+    "description": "Manage API keys and provider profiles",
+    "color": "#A7C957",
+    "bold": false
+  },
+  {
+    "id": "intelligence_keys",
+    "key": "I",
+    "label": "INTELLIGENCE KEYS",
+    "description": "Configure Tavily and Brave search keys",
+    "color": "#A7C957",
+    "bold": false
+  },
+  {
+    "id": "exit",
+    "key": "x",
+    "label": "EXIT REDLOCK",
+    "description": "Terminate all active operations",
+    "color": "#6D6D6E",
+    "bold": false,
+    "dim": true
+  }
+]

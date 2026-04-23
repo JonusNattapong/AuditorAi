@@ -1,0 +1,8 @@
+{
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "defaultViewMode": "source",
+  "showFrontmatter": true,
+  "propertiesInDocument": "source",
+  "attachmentFolderPath": "./Assets"
+}

@@ -1,0 +1,124 @@
+{
+  "openai": {
+    "label": "OpenAI",
+    "env_key": "OPENAI_API_KEY",
+    "baseUrl": "https://api.openai.com/v1",
+    "modelsUrl": "https://api.openai.com/v1/models",
+    "model": "gpt-5.4-mini",
+    "timeout": 60000,
+    "retryLimit": 2,
+    "_docs": "https://platform.openai.com/docs/models",
+    "_note": "gpt-5.4 = flagship, gpt-5.4-mini = cost-efficient, gpt-5.4-nano = cheapest"
+  },
+  "anthropic": {
+    "label": "Anthropic",
+    "env_key": "ANTHROPIC_API_KEY",
+    "baseUrl": "https://api.anthropic.com",
+    "model": "claude-sonnet-4-6",
+    "timeout": 90000,
+    "retryLimit": 2,
+    "_docs": "https://platform.claude.com/docs/en/about-claude/models/overview",
+    "_note": "claude-opus-4-7 = most capable, claude-sonnet-4-6 = balanced speed/intel, claude-haiku-4-5-20251001 = fastest"
+  },
+  "gemini": {
+    "label": "Google Gemini",
+    "env_key": "GEMINI_API_KEY",
+    "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+    "modelsUrl": "https://generativelanguage.googleapis.com/v1beta/models",
+    "model": "gemini-2.5-flash",
+    "timeout": 60000,
+    "retryLimit": 2,
+    "_docs": "https://ai.google.dev/gemini-api/docs/models",
+    "_note": "gemini-2.5-flash = best price-performance; gemini-2.0-flash จะ shutdown June 2026"
+  },
+  "openrouter": {
+    "label": "OpenRouter",
+    "env_key": "OPENROUTER_API_KEY",
+    "baseUrl": "https://openrouter.ai/api/v1",
+    "modelsUrl": "https://openrouter.ai/api/v1/models",
+    "model": "openai/gpt-5.4-mini",
+    "timeout": 120000,
+    "retryLimit": 2,
+    "_docs": "https://openrouter.ai/docs/models",
+    "_note": "OpenRouter routing OpenAI models, ใช้ model string แบบ provider/model-name"
+  },
+  "opencode": {
+    "label": "OpenCode",
+    "env_key": "OPENCODE_API_KEY",
+    "baseUrl": "https://api.opencode.ai/v1",
+    "modelsUrl": "https://api.opencode.ai/v1/models",
+    "model": "openai/gpt-5.4-mini",
+    "timeout": 120000,
+    "retryLimit": 2,
+    "_docs": "https://opencode.ai/docs",
+    "_note": "ตรวจสอบ model IDs ที่รองรับกับ /v1/models endpoint โดยตรง"
+  },
+  "groq": {
+    "label": "Groq",
+    "env_key": "GROQ_API_KEY",
+    "baseUrl": "https://api.groq.com/openai/v1",
+    "modelsUrl": "https://api.groq.com/openai/v1/models",
+    "model": "llama-3.3-70b-versatile",
+    "timeout": 60000,
+    "retryLimit": 2,
+    "_docs": "https://console.groq.com/docs/models",
+    "_note": "llama-3.1-8b-instant = เร็ว/ถูก, llama-3.3-70b-versatile = ฉลาดกว่า; llama4 ก็มีแล้ว"
+  },
+  "xai": {
+    "label": "xAI",
+    "env_key": "XAI_API_KEY",
+    "baseUrl": "https://api.x.ai/v1",
+    "modelsUrl": "https://api.x.ai/v1/models",
+    "model": "grok-4.20-non-reasoning",
+    "timeout": 60000,
+    "retryLimit": 2,
+    "_docs": "https://docs.x.ai/developers/models",
+    "_note": "grok-4.20-reasoning = deep reasoning, grok-4.20-non-reasoning = fast/cheap; grok-2-latest ถูก deprecate แล้ว"
+  },
+  "mistral": {
+    "label": "Mistral",
+    "env_key": "MISTRAL_API_KEY",
+    "baseUrl": "https://api.mistral.ai/v1",
+    "modelsUrl": "https://api.mistral.ai/v1/models",
+    "model": "mistral-large-latest",
+    "timeout": 60000,
+    "retryLimit": 2,
+    "_docs": "https://docs.mistral.ai/getting-started/models",
+    "_note": "mistral-large-latest → mistral-large-2512 (Large 3); mistral-small-latest สำหรับงานเบา"
+  },
+  "kilocode": {
+    "label": "KiloCode",
+    "env_key": "KILOCODE_API_KEY",
+    "baseUrl": "https://api.kilo.ai/api/gateway",
+    "modelsUrl": "https://api.kilo.ai/api/gateway/models",
+    "model": "kilo-auto/free",
+    "supportsStreaming": true,
+    "timeout": 180000,
+    "retryLimit": 3,
+    "_docs": "https://kilocode.ai/docs",
+    "_note": "ตรวจสอบ model IDs ล่าสุดกับ /api/gateway/models โดยตรง"
+  },
+  "cline": {
+    "label": "Cline",
+    "env_key": "CLINE_API_KEY",
+    "baseUrl": "https://api.openai.com/v1",
+    "modelsUrl": "https://api.openai.com/v1/models",
+    "model": "gpt-5.4-mini",
+    "timeout": 60000,
+    "retryLimit": 2,
+    "_docs": "https://github.com/cline/cline",
+    "_note": "Cline ใช้ OpenAI-compatible API; สามารถเปลี่ยน baseUrl ไปหา provider อื่นได้"
+  },
+  "ollama": {
+    "label": "Ollama",
+    "env_key": "OLLAMA_API_KEY",
+    "baseUrl": "http://localhost:11434/v1",
+    "modelsUrl": "http://localhost:11434/v1/models",
+    "model": "llama3.3",
+    "is_local": true,
+    "timeout": 300000,
+    "retryLimit": 1,
+    "_docs": "https://ollama.com/library",
+    "_note": "llama3.1 ยังใช้ได้ แต่ llama3.3 (70B) ดีกว่า; หรือ llama3.2 (3B) สำหรับเครื่องสเปคต่ำ"
+  }
+}

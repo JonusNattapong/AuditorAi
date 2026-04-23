@@ -1,0 +1,13 @@
+[
+  { "id": "copy", "label": "Copy to Clipboard", "color": "#FFFFFF" },
+  { "id": "save-md", "label": "Export as Markdown (.md)", "color": "#FFFFFF" },
+  { "id": "save-txt", "label": "Export as Plain Text (.txt)", "color": "#FFFFFF" },
+  { "id": "save-json", "label": "Export as JSON (.json)", "color": "#FFFFFF" },
+  { "id": "view-report", "label": "View Interactive Report (Browser)", "color": "#10B981", "bold": true },
+  { "id": "open-target", "label": "Open Target URL", "color": "#3B82F6", "bold": true },
+  { "id": "open-obsidian", "label": "Open Obsidian Workspace", "color": "#7C3AED", "bold": true },
+  { "id": "restart", "label": "Start New Mission (Main Menu)", "color": "#FFFFFF" },
+  { "id": "config", "label": "Change Provider/Settings", "color": "#FFFFFF" },
+  { "id": "__back__", "label": "Back/Cancel", "color": "#EAB308" },
+  { "id": "quit", "label": "Done (Quit)", "color": "#FFFFFF" }
+]

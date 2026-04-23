@@ -15,14 +15,19 @@ config.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+logs/
 
 # Runtime data
 temp/
 output/
 results/
 dossiers/
+workspaces/
+lib/
+index.js
 *.tmp
 *.cache
+.agent_memory.json
 
 # OS Files
 .DS_Store
@@ -42,3 +47,18 @@ desktop.ini
 .mcp/
 .roo/
 .playwright/
+.claudecode/
+.claude-code-main/
+
+# RedLock Swarm & Memory
+.redlock/
+REDLOCK.local.md
+lab/.progress.json
+.progress.json
+**/task_locks/
+**/output.log
+
+# Scheduled Tasks & Cron
+scheduled_tasks.json
+.cron/
+scheduler.lock

@@ -1,0 +1,532 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "fetch_url",
+      "description": "Visit a URL and return a structured page snapshot with title, interactive hints, visible text, and HTML preview.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string" },
+          "wait": { "type": "boolean" },
+          "waitUntil": {
+            "type": "string",
+            "enum": ["domcontentloaded", "load", "networkidle", "commit"]
+          },
+          "waitMs": { "type": "number" }
+        },
+        "required": ["url"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "dns_recon",
+      "description": "Perform DNS reconnaissance on a host.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "host": { "type": "string" }
+        },
+        "required": ["host"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "http_header_audit",
+      "description": "Audit HTTP headers for security misconfigurations.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string" }
+        },
+        "required": ["url"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "ssl_inspect",
+      "description": "Inspect SSL/TLS certificate of a host.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "host": { "type": "string" }
+        },
+        "required": ["host"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "secret_scanner",
+      "description": "Scan a local path for secrets and keys.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" }
+        }
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "wayback_lookup",
+      "description": "Lookup historical URLs for a domain using Wayback Machine.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string" }
+        },
+        "required": ["url"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "port_probe",
+      "description": "Scan common ports on a host.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "host": { "type": "string" }
+        },
+        "required": ["host"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "web_spider",
+      "description": "Spider a website to map its structure.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string" }
+        },
+        "required": ["url"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "browser_action",
+      "description": "Interactive browser control with automatic page snapshots and fallback support (navigate, click, type, submit, select, press, wait_for_selector, scroll, capture, inspect, status).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": ["navigate", "click", "type", "submit", "select", "press", "wait_for_selector", "scroll", "capture", "inspect", "status"]
+          },
+          "url": { "type": "string" },
+          "target": { "type": "string" },
+          "selector": { "type": "string" },
+          "text": { "type": "string" },
+          "key": { "type": "string" },
+          "value": { "type": "string" },
+          "state": {
+            "type": "string",
+            "enum": ["attached", "detached", "visible", "hidden"]
+          },
+          "direction": { "type": "string", "enum": ["up", "down"] },
+          "amount": { "type": "number" },
+          "waitUntil": {
+            "type": "string",
+            "enum": ["domcontentloaded", "load", "networkidle", "commit"]
+          },
+          "waitMs": { "type": "number" },
+          "timeoutMs": { "type": "number" }
+        },
+        "required": ["action"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "deliver_final_report",
+      "description": "Deliver the final tactical dossier to the user.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "report_content": { "type": "string" }
+        },
+        "required": ["report_content"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "record_vulnerability",
+      "description": "Record an attack vector's success or failure in persistent memory.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "target": { "type": "string" },
+          "vector": { "type": "string" },
+          "method": { "type": "string" },
+          "status": { "type": "string", "enum": ["success", "failure"] },
+          "payload": { "type": "string" }
+        },
+        "required": ["target", "vector", "method", "status"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_technique_blueprint",
+      "description": "Get a strategic research blueprint for a specific security technique.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "technique_id": { "type": "string" }
+        },
+        "required": ["technique_id"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "search_memory",
+      "description": "Search history for recommended attack methods for a target.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "target": { "type": "string" }
+        },
+        "required": ["target"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "create_obsidian_note",
+      "description": "Create a persistent note in the local tactical vault (Obsidian compatible).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "content": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["title", "content"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "generate_attack_canvas",
+      "description": "Generate a visual attack surface map (Obsidian Canvas).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "target": { "type": "string" },
+          "findings": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["target", "findings"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "terminal_spawn",
+      "description": "Start a persistent interactive terminal session for a long-running or interactive command.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "command": { "type": "string" },
+          "sessionId": { "type": "string", "description": "Unique identifier for this session (e.g., 'ssh_session')." }
+        },
+        "required": ["command", "sessionId"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "terminal_interact",
+      "description": "Interact with an existing terminal session by sending input or reading new output.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sessionId": { "type": "string" },
+          "input": { "type": "string", "description": "Input string to send to stdin. Leave empty to just read new output." }
+        },
+        "required": ["sessionId"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "smart_fuzz",
+      "description": "Perform stack-aware autonomous fuzzing to discover hidden endpoints and sensitive files.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string" }
+        },
+        "required": ["url"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "vision_analyze",
+      "description": "Capture a screenshot of a URL and analyze it using AI vision for UI-based vulnerabilities.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string" },
+          "prompt": { "type": "string", "description": "Specific focus for AI vision analysis (optional)." }
+        },
+        "required": ["url"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "ssrf_probe",
+      "description": "Conduct a deep SSRF analysis on a specific endpoint and parameter.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string" },
+          "parameter": { "type": "string" }
+        },
+        "required": ["url", "parameter"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "reverse_engineer",
+      "description": "Perform deep binary analysis on a local PE or ELF file to detect vulnerabilities and secrets.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" }
+        },
+        "required": ["path"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "subdomain_enum",
+      "description": "Perform OSINT-based subdomain enumeration for a domain.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string" }
+        },
+        "required": ["domain"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "xss_scanner",
+      "description": "Scan a URL for basic reflected XSS vulnerabilities.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string" }
+        },
+        "required": ["url"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "sqli_scanner",
+      "description": "Perform tactical SQL injection probing on a URL.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string" }
+        },
+        "required": ["url"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "cloud_storage_finder",
+      "description": "Search for misconfigured cloud storage buckets related to a domain.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string" }
+        },
+        "required": ["domain"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "git_history_scanner",
+      "description": "Scan a local .git directory for sensitive data leaks in history.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string" }
+        },
+        "required": ["path"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "osint_leak_checker",
+      "description": "Check for domain-related data leaks in public OSINT sources.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string" }
+        },
+        "required": ["domain"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "api_endpoint_mapper",
+      "description": "Analyze HTML/JS content to find hidden API endpoints.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "html": { "type": "string" }
+        },
+        "required": ["html"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "security_policy_audit",
+      "description": "Audit security policy files like security.txt and robots.txt.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string" }
+        },
+        "required": ["url"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "jwt_inspector",
+      "description": "Decode and analyze a JWT token for security weaknesses.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "token": { "type": "string" }
+        },
+        "required": ["token"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "js_vulnerability_scan",
+      "description": "Scan HTML/JS content for known vulnerable frontend libraries.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "html": { "type": "string" }
+        },
+        "required": ["html"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "mission_checkpoint",
+      "description": "Autonomously record a tactical mission checkpoint to restate progress and ensure alignment with the MISSION GOAL.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "summary": { "type": "string", "description": "Summary of what has been achieved so far." },
+          "next_steps": { "type": "string", "description": "Planned actions to achieve the final goal." }
+        },
+        "required": ["summary", "next_steps"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "learn_github_skill",
+      "description": "Download a raw security script or technique from GitHub and store it in the AI memory (Obsidian).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "url": { "type": "string", "description": "The RAW URL of the script or technique (e.g. from GitHub/Gist)." },
+          "skill_name": { "type": "string", "description": "A descriptive name for this skill." },
+          "category": { "type": "string", "description": "e.g. exploitation, recon, bypass" }
+        },
+        "required": ["url", "skill_name"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "load_skill",
+      "description": "Read the full implementation and instructions of a previously learned skill from Obsidian.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "skill_name": { "type": "string", "description": "The full title of the skill (e.g. Skill_XSS_Payloads)." }
+        },
+        "required": ["skill_name"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "search_skills",
+      "description": "Search the AI brain (Obsidian) for previously learned skills or techniques.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string", "description": "Search term to find relevant skills." }
+        },
+        "required": ["query"]
+      }
+    }
+  }
+]

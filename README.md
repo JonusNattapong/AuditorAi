@@ -1,123 +1,119 @@
-# Mibu 101 (v2.0.0) — AuditorAi 
+# REDLOCK AuditorAi v3.0.0
 
-## 🛰️ Autonomous Swarm Intelligence & Strategic Red-Teaming Platform
+## Autonomous Security Intelligence & Swarm Orchestration Platform
 
-Mibu 101 is a high-fidelity autonomous intelligence platform engineered for deep-spectrum security assessments, prompt resilience mapping, and systemic vulnerability discovery. It utilizes a parallel swarm architecture with **Intelligence Enforcement Protocols** to ensure comprehensive research delivery and zero-summary laziness.
+REDLOCK AuditorAi is a professional-grade autonomous intelligence platform designed for advanced security research, red teaming, and systematic vulnerability discovery. The system leverages a decentralized swarm architecture, enabling AI agents to conduct independent reconnaissance, analysis, and strategic reporting with full operational autonomy.
 
-> ⚠️ **FOR EDUCATIONAL PURPOSES ONLY**
-> This project is created for learning, research and cybersecurity skill training. Do not use on systems without explicit written authorization.
->
-> **Operational Noir Mode: Enabled**
-
----
-
-## 🎬 Operational Intelligence Stream
-
-<div align="center">
-  <video src="media/demo_auditorai_v2.mp4" width="100%" controls>
-    Your browser does not support the video tag.
-  </video>
-</div>
+> **TACTICAL ADVISORY**
+> This platform is engineered for elite security research and authorized auditing.
+> Full agent autonomy is enabled. Operate with extreme precision.
 
 ---
 
-## ✨ Elite Capabilities
+## ✅ Latest 2026 Upgrade
 
-- **🧬 Smart Fuzzer (Predictive Recon):** Stack-aware path prediction. Instead of brute-forcing, it detects technologies (Next.js, PHP, WordPress, etc.) and predicts hidden directories, backup files, and forgotten endpoints based on developer habits.
-- **🎭 Shadow Stealth Mode (Ghost in the Shell):** Automated identity rotation. Every request features randomized high-fidelity User-Agents and tactical headers. Supports proxy rotation to bypass WAFs and IP-based bans.
-- **📊 Mission Dossier 2.0:** Professional-grade PDF reports. Automatically generates premium dossiers with Risk Heatmaps, OWASP Top-10 mapping, and high-fidelity evidence logs.
-- **🛰️ Dynamic Tactical HUD:** Real-time operational phase tracking (Recon, Mapping, Analysis, Exploitation) through an advanced TUI interface.
-- **🛡️ Intelligence Enforcement:** Anti-laziness protocol that prevents AI from providing short summaries. Forces full evidence delivery or falls back to internal draft reconstruction.
-- **🧠 Swarm Orchestration:** Parallel execution across multiple providers (OpenAI, Anthropic, Gemini, Kilocode) for cross-validation of vulnerabilities.
-- **👁️ Vision-Powered Audit:** AI-powered UI vulnerability scanning to find hidden elements and UI-logic flaws invisible to traditional crawlers.
+✅ **Complete Swarm Autonomy System implemented**
+✅ **Background Workers with Task Persistence**
+✅ **Parallel Execution Engine with p-limit**
+✅ **Strict Orchestration Protocol (Zero Ambiguity)**
+✅ **Full TUI Command System / Slash Commands**
+✅ **Cron Scheduler & Remote Session Teleport**
+✅ **Watchdog Monitoring & Process Recovery**
+✅ **Zero Summary Laziness Guarantee**
+✅ **MITM Shadow Proxy with Active Request Mutation**
+✅ **AI-Powered Payload Forge Engine**
+✅ **HTTPS CONNECT Tunnel Support**
 
 ---
 
-## 🎯 Special Features
+## Core Capabilities
 
-### Mission Dossiers 2.0 (Premium Output)
+- **JSON-Driven Intelligence**: Completely decoupled architecture. AI providers, model metadata, tactical tools, and stealth profiles are managed through a centralized, data-centric JSON infrastructure.
+- **Predictive Fuzzing Engine**: Stack-aware path detection that fingerprints target technologies and predicts hidden endpoints based on deep developer habit analysis.
+- **Tactical Stealth Engine**: Advanced anti-detection layer with identity rotation, randomized User-Agent profiling, and tactical header injection. Supports multi-proxy orchestration for WAF evasion.
+- **Cyber-Noir Intelligence Dossiers**: Automated generation of premium, board-ready security assessments featuring Risk Heatmaps, OWASP mapping, and technical evidence.
+- **Autonomous Swarm Controller**: Multi-provider orchestration allowing for cross-validation and parallel execution across OpenAI, Anthropic, Gemini, and Local models (Ollama/LM Studio).
+- **Vision-Assisted Recon**: High-fidelity visual UI analysis to detect logic flaws and sensitive data exposure invisible to traditional crawlers.
+- **Unrestricted System Agent**: Full shell execution, filesystem management, and persistent memory across missions.
+- **Human-Mimetic Automation**: Playwright-powered browser automation with bezier-curve mouse movement and natural interaction patterns to bypass modern bot detection.
 
-AuditorAi now archives all findings into a **Premium Strategic PDF**. This isn't just a text log; it's a graded assessment featuring:
-- **Risk Heatmap:** Visual impact vs. likelihood matrix.
-- **OWASP Alignment:** Automated mapping to global security standards.
-- **Executive Summary:** High-level briefing for decision-makers.
-- **Tactical Evidence:** Technical snapshots and PoCs for devs.
+---
 
-### Integrated Vulnerable Lab (13-Level)
+## Agent Arsenal (Swarm Tools)
 
-Includes a full progressive security training lab with 13 levels of real-world vulnerabilities:
+| Tool | Capability |
+|---|---|
+| `run_command` | Native shell execution (PowerShell/Bash) with zero restrictions. |
+| `fetch_url` | Stealth resource retrieval and content extraction. |
+| `crawl_url` | Deep semantic web crawling via Crawl4AI. |
+| `browser_action` | Interactive browser control (Navigate, Click, Type, Capture). |
+| `security_recon` | DNS, Port, Header, SSL, Wayback, and Secret scanning suite. |
+| `craft_exploit` | AI-assisted payload engineering and obfuscation. |
+| `vision_analysis` | Visual UI auditing and OCR-based intelligence gathering. |
+| `memory_read_write` | Persistent state synchronization across the agent swarm. |
+| `obsidian_sync` | Intelligence vaulting and report synchronization with Obsidian. |
 
-| Level | Port | Flaw Category | Type of Vulnerability |
-|---|---|---|---|
-| Level 01 | 8101 | Auth Bypass | Loose equality comparison |
-| Level 02 | 8102 | Injection | SQL Injection (Classic) |
-| Level 03 | 8103 | XSS | Reflected + Stored Scripting |
-| Level 04 | 8104 | IDOR | Broken object level access |
-| Level 05 | 8105 | CSRF | Cross-Site Request Forgery |
-| Level 06 | 8106 | Blind SQLi | Time-based inference |
-| Level 07 | 8107 | WAF Bypass | XSS filter evasion |
-| Level 08 | 8108 | Deserialization | Insecure Object Data handling |
-| Level 09 | 8109 | SSRF | Server-Side Request Forgery |
-| Level 10 | 8110 | Logic Flaw | Business logic/Payment bypass |
-| Level 11 | 8111 | File Upload | Unrestricted Shell Upload |
-| Level 12 | 8112 | Race Condition | Concurrency-based logic flaws |
-| Level 13 | 8113 | JWT Forgery | Broken Token Authentication |
+---
+
+## Intelligence Vaulting & Reporting
+
+AuditorAi features native integration with **Obsidian**, allowing the swarm to build a persistent, interconnected security knowledge base (Vault) in real-time.
+
+- **Automated Dossiers**: Strategic reports are formatted in clean Markdown, ready for Obsidian's graph view.
+- **Evidence Vaulting**: All tool outputs, screenshots, and findings are automatically categorized and cross-linked.
+- **Braintrust Sync**: Synchronize mission intelligence across your personal knowledge base for long-term vulnerability tracking.
+
+---
+
+## Technical Architecture
+
+- **Runtime**: [Bun](https://bun.sh) (High-performance TS/JS runtime)
+- **API Engine**: [ElysiaJS](https://elysiajs.com) (End-to-end type-safe web framework)
+- **Intelligence Orchestration**: Data-driven Swarm Controller
+- **Stealth Automation**: Playwright with custom anti-detection protocols
+- **Reporting**: Strategic PDF generation engine
+- **Configuration**: Unified JSON System (`src/config/providers.json`, `server/tools.json`)
+
+---
+
+## Installation & Deployment
+
+### 1. Initialization
 
 ```bash
-# Run full lab environment
-node lab/lab_server.js
-# Access: http://localhost:8100
-```
-
----
-
-## 🏗 Technology Stack
-
-- **Core:** Node.js + Express 5.x
-- **Agentic Engine:** Custom Swarm Orchestrator (Multi-Provider)
-- **Intelligence:** GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, Llama 3
-- **Browsing:** Playwright (Stealth-hardened)
-- **Reporting:** ReportForge (Playwright-PDF Engine)
-- **Evasion:** Shadow Stealth Engine (Identity Swapper)
-
----
-
-## 🚀 Getting Started
-
-### 1. Installation
-
-```bash
-git clone https://github.com/JonusNattapong/AuditorAi.git
-cd Mibu-101
-npm install
+bun install
 ```
 
 ### 2. Configuration
 
-Copy `.env.example` to `.env` and enter your API keys. Pro-tip: Add `AUDITOR_PROXIES` for Ghost Mode.
+AuditorAi uses a centralized configuration system. Edit `src/config/providers.json` to manage AI gateways and `src/config/stealth_config.json` for anti-detection parameters. Persistent profiles can be managed via `src/config/configManager.ts`.
 
-```env
-# Shadow Stealth Config
-AUDITOR_MIN_DELAY=300
-AUDITOR_MAX_DELAY=1200
-AUDITOR_PROXIES=http://user:pass@proxy1,http://proxy2
+### 3. Execution Commands
+
+| Command | Mode |
+|---|---|
+| `bun start` | Main Mission Bootstrap |
+| `bun run tui` | Operational HUD (Terminal UI) |
+| `bun run web` | API & Tactical Dashboard |
+| `bun run check` | Full System Type Validation |
+| `bun run lab` | Integrated Training Lab |
+
+---
+
+## Integrated Training Lab
+
+The platform includes a dedicated security lab featuring 13 real-world vulnerability scenarios for training and mission validation, covering everything from SQLi and XSS to Logic Flaws and JWT Forgery.
+
+```bash
+bun lab/index.ts
 ```
 
-### 3. Execution
+---
 
-| Command | Description |
-|---|---|
-| `npm start` | Launch Strategic CLI |
-| `npm run tui` | Operational Tactical HUD |
-| `npm run web` | Web Deployment Dashboard |
-| `npm run dev` | Dev Watch Mode |
+## Compliance and Liability
+
+This platform is intended for authorized security auditing, educational research, and defensive system hardening only. Unauthorized malicious use is strictly prohibited. The authors bear no responsibility for any actions performed using this software.
 
 ---
 
-## ⚖️ Ethics and Compliance
-
-This platform is intended for authorized security auditing, educational research, and defense hardening only. Unauthorized use of this tool for malicious activity is strictly prohibited. Mibu 101 is conditioned to operate as a professional security assessment engine.
-
----
-
-*Operational Precision. Swarm Intelligence. Zero Summary Laziness.*
+**Operational Precision. Swarm Intelligence. Zero Summary Laziness. Full Autonomy.**

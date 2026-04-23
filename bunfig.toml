@@ -1,0 +1,22 @@
+# RedLock - Bun Tactical Configuration
+
+[runtime]
+# Enable smarter and faster module resolution
+# supports both CommonJS and ESM automatically
+env = ".env"
+
+[install]
+# Use the fastest lockfile format
+lockfile = true
+
+[test]
+# Configuration for bun test
+root = "."
+
+[serve]
+# Default development server settings
+port = 4040
+
+[debug]
+# Detailed logging for tactical analysis
+# filter = "bun:*"
